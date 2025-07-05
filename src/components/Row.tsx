@@ -105,45 +105,48 @@ export default function Toolbar() {
                          </button>
                     </div>
                </div>
-               <div className="mx-6 max-w-full">
-                    <div className="flex w-full h-10 border border-gray-200 rounded shadow overflow-hidden">
+               <div className="mx-7 max-w-full">
+                    <div className="flex w-full h-9 border border-gray-200 rounded shadow overflow-hidden relative">
                          {/* 45% gray with content */}
                          <div className="h-full flex items-center px-2" style={{ width: "45%", background: "#d1d5db" }}>
-                              <button className="flex items-center gap-2 bg-gray-200 border border-gray-300 rounded px-3 py-1 text-gray-500 font-medium hover:bg-gray-100 transition">
+                              <button className="flex items-center gap-1 bg-gray-200 border border-gray-300 rounded px-3 py-1 text-sm text-gray-500 font-medium hover:bg-gray-100 transition">
                                    <MdInsertLink className="text-lg text-blue-400" />
-                                   Financial Overview
+                                   Q3 Financial Overview
                               </button>
                               <BsArrowRepeat className="text-lg text-orange-500 ml-2 rotate-90" />
                          </div>
                          {/* 10% white*/}
-                         <button style={{ width: "10%", background: "#fff" }} className="h-full flex items-center justify-center border-none">
+                         <button style={{ width: "10.2%", background: "#fff" }} className="h-full flex items-center justify-center border-none">
                               <span className="text-2xl text-gray-400 font-bold"></span>
                          </button>
                          {/* 10% green: PiArrowsSplitBold + ABC */}
-                         <button style={{ width: "10%", background: "#4ade80" }} className="h-full flex items-center justify-center gap-1 border-none">
-                              <PiArrowsSplitBold className="text-gray-700 text-lg" />
-                              <span className="text-gray-700 text-sm font-medium">ABC</span>
+                         <button
+                              style={{ width: "9.998%" }}
+                              className="h-full px-4 py-1 bg-lime-800  opacity-60 text-white  flex items-center justify-center gap-1 border-none hover:bg-lime-800 transition"
+                         >
+                              <PiArrowsSplitBold className="text-black font-medium mt-1" />
+                              <span className="text-black text-sm font-bold">ABC</span>
+                              <span className="text-black text-sm font-bold mb-2 ml-1">...</span>
                          </button>
                          {/* 15.5% purple: PiArrowsSplitBold + Answer a question */}
                          <button style={{ width: "15.5%", background: "#a78bfa" }} className="h-full flex items-center justify-center gap-1 border-none">
-                              <PiArrowsSplitBold className="text-gray-700 text-lg" />
+                              <PiArrowsSplitBold className="text-white text-sm mt-0.5" />
                               <span className="text-gray-700 text-sm font-medium">Answer a question</span>
+                              <span className="text-gray-500 text-sm font-bold mb-2 ml-1">...</span>
+
                          </button>
                          {/* 10% orange: PiArrowsSplitBold + Extract */}
-                         <button style={{ width: "10%", background: "#fb923c" }} className="h-full flex items-center justify-center gap-1 border-none">
-                              <PiArrowsSplitBold className="text-gray-700 text-lg" />
+                         <button style={{ width: "9.8%" }} className="h-full bg-orange-300 flex items-center justify-center gap-1 border-none">
+                              <PiArrowsSplitBold className="text-white text-sm mt-1 mr-0.5" />
                               <span className="text-gray-700 text-sm font-medium">Extract</span>
+                              <span className="text-gray-400 text-sm font-bold mb-2 ml-1">...</span>
                          </button>
-                         {/* Remaining space: purple button */}
-                         <button style={{ width: "9.5%" }} className="h-full flex text-4xl mb-4 font-light flex items-center justify-center bg-gray-200 gap-1 border-none">
+                         {/* Remaining space: plus button */}
+                         <button style={{ width: "9.8%" }} className="h-full flex text-4xl mb-4 font-light flex items-center justify-center bg-gray-200 gap-1 border-none">
                               <span className="text-gray-800 text-4xl mb-1.5 font-light">+</span>
                          </button>
+
                     </div>
-               </div>
-               {/* Vertical lines */}
-               <div className="relative w-full" style={{ height: "calc(95vh - 100px)" }}>
-                    <div className="absolute left-6 top-0 h-full w-px bg-gray-200"></div>
-                    <div className="absolute right-6 top-0 h-full w-px bg-gray-200"></div>
                </div>
           </>
      );
