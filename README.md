@@ -4,8 +4,7 @@ This is a frontend implementation of a spreadsheet-style UI inspired by a Figma 
 
 ## 🚀 Live Demo
 
-[🔗 Deployed Project Link](https://your-deployed-url.com)  
-> _(Replace with your actual deployed link, e.g., from Vercel/Netlify)_
+[🔗 Deployed Project Link](https://gob-sheet-uvdl.vercel.app/)  
 
 ---
 
