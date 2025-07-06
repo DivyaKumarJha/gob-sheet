@@ -11,12 +11,12 @@ const Header: React.FC = () => {
                          <span className="relative w-6 h-5 border-2 border-lime-700 rounded-md mr-4.5 ">
                               <span className="absolute right-0 top-0 h-full w-[40%] bg-lime-700 rounded-none"></span>
                          </span>
-                         <span className="text-gray-400">Workspace</span>
+                         <span className="text-gray-400 cursor-pointer" onClick={() => console.log('You are in Workspace')}>Workspace</span>
                          <span className="text-gray-300">{'>'}</span>
-                         <span className="text-gray-400">Folder 2</span>
+                         <span className="text-gray-400 cursor-pointer" onClick={() => console.log('You are in Folder 2')}>Folder 2</span>
                          <span className="text-gray-300">{'>'}</span>
-                         <span className="font-semibold text-gray-900">Spreadsheet 3</span>
-                         <button className="font-semibold ml-2 text-bold  mb-2 text-gray-400">...</button>
+                         <span className="font-semibold text-gray-900 cursor-pointer" onClick={() => console.log('You are in Spreadsheet 3')}>Spreadsheet 3</span>
+                         <button className="font-semibold ml-2 font-bold  mb-2 text-gray-400">...</button>
                     </nav>
 
                     {/* Search and actions */}
@@ -29,6 +29,7 @@ const Header: React.FC = () => {
                                    placeholder="Search within sheet"
                                    className="px-0.5 py-1 rounded text-[10px] min-w-0 w-24 focus:outline-none bg-transparent placeholder:text-[10.5px]"
                                    style={{ fontSize: '10px' }}
+                                   onChange={() => console.log('searching')}
                               />
                          </div>
                          {/* Notification bell */}
@@ -36,13 +37,13 @@ const Header: React.FC = () => {
                               <button
                                    className="text-lg text-gray-600 cursor-pointer focus:outline-none w-7 h-7 flex items-center justify-center"
                                    title="Notifications"
-                                   onClick={() => setShowSidebar(true)}
+                                   onClick={() => { setShowSidebar(true); console.log('notification is being consoled'); }}
                               >
                                    <i className="ri-notification-2-line"></i>
                               </button>
                               <span className="absolute top-1 right-1.5 -translate-y-1/2 translate-x-1/2 bg-lime-800 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border-2 border-white">2</span>                         </div>
                          {/* User info */}
-                         <div className="flex items-center gap-1">
+                         <div className="flex items-center gap-1 cursor-pointer" onClick={() => console.log('user is john doe')}>
                               <img src="https://ui-avatars.com/api/?name=John+Doe" alt="User Avatar" className="w-6 h-6 rounded-full" />
                               <div className="flex flex-col leading-tight">
                                    <span className="font-medium text-xs text-gray-900">John Doe</span>

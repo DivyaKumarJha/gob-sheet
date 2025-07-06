@@ -1,6 +1,4 @@
 import React from 'react';
-import Toolbar from './components/Toolbar';
-import Tabs from './components/Tabs';
 import Spreadsheet from './components/Spreadsheet';
 import Header from './components/Header';
 import Row from './components/Row';
