@@ -4,7 +4,7 @@ This is a frontend implementation of a spreadsheet-style UI inspired by a Figma 
 
 ## 🚀 Live Demo
 
-[🔗 Deployed Project Link](https://gob-sheet-uvdl.vercel.app/)  
+[🔗 Deployed Project Link] is https://gob-sheet-uvdl.vercel.app/  
 
 ---
 
